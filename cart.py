@@ -61,7 +61,7 @@ while not done:
 
     cnt += 1
 
-    action = 1 if np.dot(observation, new_weights) > 0 else 0
+    action = 1 if np.dot(observation, best_weights) > 0 else 0
     #step right if dot product of observation and new weights is greater than 0, step left elsewise
 
     observation, reward, done, _ = env.step(action)
