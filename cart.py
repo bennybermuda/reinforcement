@@ -52,7 +52,7 @@ for i in range(100):
         best_weights = new_weights
     episode_lengths.append(avg_length)
     if i % 10 == 0:
-        print('best length is ', bestLength)
+        print('best length after ', i, 'episodes is ', bestLength)
             
 done = False
 cnt = 0
@@ -60,5 +60,7 @@ env = wrappers.Monitor(env, 'vids', force=True)
 observation = env.reset()
 
 #test on best weights
-run_episodes(cnt, best_weights, observation, done)
+cnt = run_episodes(cnt, best_weights, observation, done)
+
+print('with best weights, game lasted: ', cnt, 'moves')
 
