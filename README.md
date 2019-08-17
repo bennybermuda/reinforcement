@@ -2,7 +2,7 @@
 
 A learning project on Reinforcement Learning using:
 
-CartPole-v1 from OpenAI Gym 
+CartPole-v1 and MountainCar-v0 from OpenAI Gym 
 https://gym.openai.com/envs/CartPole-v1/
 
 and guided by:
